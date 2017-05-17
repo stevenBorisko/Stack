@@ -70,7 +70,7 @@ void* Stack_pop(Stack* stack);
 param	stack	(const Stack*)
 	stack to be inspected
 returns		(void*)
-	the next object to be popped and the last object that was pushed
+	the next element to be popped and the last element that was pushed
 
 Returns the top of the stack
 */
