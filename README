@@ -5,6 +5,8 @@ This, like all the other C data structure repositories on my Github,
 was made so that neither you nor I will ever have to rewrite any of them
 again for any other projects in the future.
 
+Functions of a Stack (documentation in header file)
+
 Creating a Stack
 Stack Stack_init()
 Stack* Stack_create();
