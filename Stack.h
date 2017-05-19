@@ -35,7 +35,7 @@ return		(Stack)
 
 Creastes a Stack and initializes it to an empty Stack
 */
-Stack Stack_init()l
+Stack Stack_init();
 
 /*
 return		(Stack*)

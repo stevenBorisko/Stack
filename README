@@ -1,0 +1,20 @@
+This is a struct called Stack that is a
+generic stack data structure.
+
+This, like all the other C data structure repositories on my Github,
+was made so that neither you nor I will ever have to rewrite any of them
+again for any other projects in the future.
+
+Creating a Stack
+Stack Stack_init()
+Stack* Stack_create();
+
+Insertion and Removal
+void Stack_push(Stack* stack, void* data);
+void* Stack_pop(Stack* stack);
+
+Miscellaneous
+void* Stack_peek(const Stack* stack);
+int Stack_isEmpty(const Stack* stack);
+unsigned int Stack_count(const Stack* stack);
+void Stack_clear(Stack* stack, void (*destroy)(void*));
