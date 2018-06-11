@@ -1,22 +1,33 @@
-This is a struct called Stack that is a
-generic stack data structure.
+Generic stack data structure
 
 This, like all the other C data structure repositories on my Github,
 was made so that neither you nor I will ever have to rewrite any of them
 again for any other projects in the future.
 
-Functions of a Stack (documentation in header file)
+Full documentation on usage is found in Stack.h
 
-Creating a Stack
-Stack Stack_init()
-Stack* Stack_create();
+Structs:
+	struct StackNode:
+		- Wrapper struct for storing data in a Stack
+	Stack:
+		- LIFO data structure
 
-Insertion and Removal
-void Stack_push(Stack* stack, void* data);
-void* Stack_pop(Stack* stack);
-
-Miscellaneous
-void* Stack_peek(const Stack* stack);
-int Stack_isEmpty(const Stack* stack);
-unsigned int Stack_count(const Stack* stack);
-void Stack_clear(Stack* stack, void (*destroy)(void*));
+Stack Creation Functions:
+	Stack Stack_init()
+		- Creates a Stack and initializes it to an empty Stack
+	Stack* Stack_create()
+		- Allocates space for and initializes a Stack
+Stack Insertion and Removal Functions:
+	void Stack_push(Stack* stack, void* data)
+		- Adds a new element to the top of the stack
+	void* Stack_pop(Stack* stack)
+		- Removes the top element from the stack and returns it
+Stack Miscellaneous Functions:
+	void* Stack_peek(const Stack* stack)
+		- Returns the top of the stack
+	int Stack_isEmpty(const Stack* stack)
+		- Returns whether the stack is empty
+	unsigned int Stack_count(const Stack* stack)
+		- Returns the number of elements in the stack
+	void Stack_clear(Stack* stack, void (*destroy)(void*))
+		- Empties the stack
