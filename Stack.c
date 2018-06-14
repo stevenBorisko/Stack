@@ -11,12 +11,6 @@ Stack Stack_init() {
 	return ret;
 }
 
-Stack* Stack_create() {
-	Stack* ret = malloc(sizeof(Stack));
-	*ret = Stack_init();
-	return ret;
-}
-
 void Stack_push(Stack* stack, void* data) {
 	struct StackNode* newHead = malloc(sizeof(struct StackNode));
 

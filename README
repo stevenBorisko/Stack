@@ -15,13 +15,13 @@ Structs:
 Stack Creation Functions:
 	Stack Stack_init()
 		- Creates a Stack and initializes it to an empty Stack
-	Stack* Stack_create()
-		- Allocates space for and initializes a Stack
+
 Stack Insertion and Removal Functions:
 	void Stack_push(Stack* stack, void* data)
 		- Adds a new element to the top of the stack
 	void* Stack_pop(Stack* stack)
 		- Removes the top element from the stack and returns it
+
 Stack Miscellaneous Functions:
 	void* Stack_peek(const Stack* stack)
 		- Returns the top of the stack

@@ -23,7 +23,7 @@ struct StackNode {
 };
 
 /*
---- struct Stack ---
+--- Stack ---
 
 head (struct StackNode*)
 	- Top of the stack,
@@ -52,16 +52,6 @@ return (Stack)
 Creates a Stack and initializes it to an empty Stack
 */
 Stack Stack_init();
-
-/*
---- Stack_create ---
-
-return (Stack*)
-	Malloc'ed and initialized Stack
-
-Allocates space for and initializes a Stack
-*/
-Stack* Stack_create();
 
 /*
 --- Stack_push ---
